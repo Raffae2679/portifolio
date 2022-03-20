@@ -125,6 +125,7 @@ body{
     font-size: 30px;
     margin: 0;
     box-sizing: unset!important;
+    padding-right: 5px;
 }
 
 .perfil-texto h3{
