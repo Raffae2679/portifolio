@@ -1,0 +1,40 @@
+@media ( max-width: 365px ) {
+    .textos-perfil{
+        width: 290px;
+    }
+    .perfil-texto h1{
+        font-size: 25px;
+    }
+    
+    .bloco-contato{
+        width: 80%;
+    }
+}
+
+@media (max-width: 376px){
+    .textos-perfil{
+        width: 290px;
+    }
+    .perfil-texto h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 394px){
+    .textos-perfil{
+        width: 300px;
+    }
+    .perfil-texto h1{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 600px){
+    .card{
+        width: 60%;
+    }
+
+    .bloco-contato{
+        width: 80%;
+    }
+}

@@ -1,0 +1,501 @@
+/* Configurações de estilos gerais do site  */ 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    overflow-x: hidden;
+}
+
+*{
+    color:rgb(249, 249, 249);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fim das configurações gerais */ 
+
+/* Edições css */
+.perfil-texto h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.descricao p, .card-descricao p {
+    display: block;
+    margin-block-start: 1em;
+    
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
+
+.card-descricao p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
+.front-titulo h3, .back-titulo h3, .database-titulo h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} 
+
+.card-descricao h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} 
+
+#label h4{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} 
+
+/* Edições css */
+
+
+
+
+/* Introdução do site */
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-left:100px ;
+    padding-right: 100px;
+    margin-bottom: 40px;
+    width: 100%;
+    
+}
+
+
+/* Div Imagem */ 
+.perfil-foto{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.perfil-foto img{
+    border-radius: 200px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid cyan;
+}
+/* Fim Div Imagem */
+
+
+/* Div dos textos */
+.textos-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 348px;
+}
+
+.perfil-texto{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.perfil-texto h1{
+    font-size: 30px;
+    margin: 0;
+    box-sizing: unset!important;
+}
+
+.perfil-texto h3{
+    margin-top: 10px;
+    color: #828282;
+}
+
+
+/* Div Botao */
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.btn-contato{
+    background: rgb(52, 170, 170);
+    border: none ;
+    color: #F9F9F9;
+    height: 40px;
+    width: 158px;
+    margin-right: 20px;
+}
+
+.btn-projeto{
+    height: 40px;
+    width: 158px;
+    border: 1px solid #F9F9F9;
+    color: #F9F9F9;
+    background:#171717 ;
+
+
+}
+
+
+/* Fim Div Botão */
+
+/* Fim da introdução do site*/
+
+/* Descrição  */
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-left:20px ;
+    padding-right: 20px;
+
+    
+}
+
+.descricao h1{
+    font-size: 30px;
+    border-bottom: 5px solid rgb(52, 170, 170);
+    margin-bottom: 10px;
+}
+
+.descricao p{
+    font-size: 20px;
+    color: #828282;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(52, 170, 170);
+}
+
+/* FIm descrição */
+
+
+/* Habilidades */
+
+
+    .habilidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .habilidades h1{
+        font-size: 30px;
+        border-bottom: 5px solid rgb(52, 170, 170);
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .div-habilidades{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .front-skill, .back-skill, .database-skill{
+        width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .front-titulo, .back-titulo, .database-titulo{
+        display: flex;
+        width: 100%;
+        background: rgb(52, 170, 170);
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+    .front-imagem, .back-imagem, .database-imagem{
+        display: flex;
+        width: 100%;
+        box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
+        background-color: #171717;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        align-items: center;
+        height: 150px;
+    }
+
+
+    .front-imagem embed, .back-imagem embed, .database-imagem embed{
+        height: 76px!important;
+        width:  56px!important;
+        padding-top: 10px ;
+        padding-bottom: 10px;
+    }
+
+
+
+/* Fim Habilidades */
+
+
+/* Projetos */
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.projetos h1{
+    font-size: 30px;
+    border-bottom: 5px solid rgb(52, 170, 170);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.projetos-btn{
+    padding-top: 15px;
+    display:  flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.projetos-btn button{
+    border-radius: 7px;
+    background:#171717;
+    border: 1px solid rgb(52, 170, 170);
+    height: 40px;
+    width: 100px;
+}
+
+
+.projetos-cards{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 50px;
+}
+
+.card{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: rgba(249, 249, 249, 0.05);
+    /*background: #1b353878; */
+    
+}
+
+.card-imagem{
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.card-descricao{
+    padding-left: 16px;
+}
+
+.card-descricao p{
+    color: #828282;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.card-flags{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.card-flags ul{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.card-flags li{
+    background: rgb(52, 170, 170);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.card-btn{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-btn button{
+    margin-left: 16px;
+    border: 0;
+    color: #F9F9F9;
+    background: rgb(52, 170, 170);
+    padding: 10px;
+    font-weight: 600;
+    width: 180px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#label{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: 17px;
+    color: #828282;;
+}
+.bolinha{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    align-items: center;
+    height: 8px;
+    border-radius: 50%;
+    background: #34aaaa;
+    margin-left: 8px;
+    margin-right: 8px;
+    /* Codigo pego do excelentissimo dev Helder Souza */
+}
+/* Fim Projetos */
+
+/* Contato  */
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    
+}
+
+.contato h1{
+    font-size: 30px;
+    border-bottom: 5px solid rgb(52, 170, 170);
+    margin-bottom: 18px;
+}
+
+.bloco-contato{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.descricao-contato{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.descricao-contato p{
+    font-size: 20px;
+    color: #828282;
+    margin: 10px;
+}
+
+.icones-contato{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icones-contato embed{
+    width: 51px;
+    height: 51px;
+    border-radius: 15px;
+}
+/* Fim contato */
+
+/* footer */
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Fim do footer */
+
+
+
+/* Animação */
+
+.digitacao-auto{
+    max-width: 23ch;
+    width: 23ch;
+    animation: digitar 2s steps(40), blink .5s step-end infinite alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 12px solid;
+}
+
+
+@keyframes digitar {
+    from{
+        width: 0;
+    }
+    
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+/* Fim Animação */
+
+/* */
+/* */
+
