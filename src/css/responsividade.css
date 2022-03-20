@@ -1,9 +1,9 @@
-@media ( max-width: 365px ) {
+@media ( max-width: 375px ) {
     .textos-perfil{
         width: 290px;
     }
     .perfil-texto h1{
-        font-size: 25px;
+        font-size: 21px;
     }
     
     .bloco-contato{
@@ -11,16 +11,16 @@
     }
 }
 
-@media (max-width: 376px){
+@media (min-width: 376px){
     .textos-perfil{
         width: 290px;
     }
     .perfil-texto h1{
-        font-size: 25px;
+        font-size: 21px;
     }
 }
 
-@media (max-width: 394px){
+@media (min-width: 394px){
     .textos-perfil{
         width: 300px;
     }
