@@ -475,7 +475,7 @@ footer p{
 
 .digitacao-auto{
     max-width: 23ch;
-    width: 25ch;
+    width: 23ch;
     animation: digitar 2s steps(40), blink .5s step-end infinite alternate ;
     white-space: nowrap;
     overflow: hidden;
