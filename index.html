@@ -38,13 +38,13 @@
 
             <div class="textos-perfil">
                 <div class="perfil-texto">
-                    <h1 class="digitacao-auto">Olá, eu sou Raffael Morais</h1>
+                    <h1>Olá, eu sou Raffael Morais</h1>
                     <h3>Desenvolvedor Backend e Entusiasta de Data Science</h3>
                 </div>
 
                 <div class="btns">
-                    <button class="btn-contato">Contato</button>
-                    <button class="btn-projeto">Projetos</button>
+                    <button class="btn-contato" onclick="contato()">Contato</button>
+                    <button class="btn-projeto" onclick="projetos()">Projetos</button>
                 </div>
             </div>
 
@@ -53,13 +53,15 @@
         <div id="sobre"></div>
         <section class="descricao">
             <h1>Quem sou eu</h1>
-            <p>Sou bacharelando do curso de Ciências e Tecnologia com enfase em mecatrônica e técnico em T.I com enfase em desenvolvimento web. </p>
+            <div class="texto-descricao">
+                <p>Sou bacharelando do curso de Ciências e Tecnologia com enfase em mecatrônica e técnico em T.I com enfase em desenvolvimento web. </p>
 
-            <p>Fiz parte da empresa júnior da escola de ciências e tecnologia, a <a href="https://www.ejectufrn.com.br">EJECT</a>. Lá atuei como desenvolvedor back-end, sendo responsável por desenvolver o back de sites e sistemas. Também gerenciei projetos usando Scrum.</p>
-                
-            <p>Atualmente me encontro como estagiário na <a href="https://site.esig.com.br">ESIG Software e Consultoria</a>, onde atuo como desenvolvedor java, sendo responsavel por realizar implementações, correções e validações dos sistemas Sigs.</p>
-                
-            <p>Sou um entusiasta nessa área de programação e fico cada vez mais fascinado com as coisas que podemos fazer e nas soluções que podemos criar, acredito que a melhor parte é poder ver o impacto positivo do uso dessas tecnologias. Posso dizer que me interesso pelas áreas de Data Science, Machine Learning, Automação e desenvolvimento web.</p>
+                <p>Fiz parte da empresa júnior da escola de ciências e tecnologia, a <a href="https://www.ejectufrn.com.br">EJECT</a>. Lá atuei como desenvolvedor back-end, sendo responsável por desenvolver o back de sites e sistemas. Também gerenciei projetos usando Scrum.</p>
+                    
+                <p>Atualmente me encontro como estagiário na <a href="https://site.esig.com.br">ESIG Software e Consultoria</a>, onde atuo como desenvolvedor java, sendo responsavel por realizar implementações, correções e validações dos sistemas Sigs.</p>
+                    
+                <p>Sou um entusiasta nessa área de programação e fico cada vez mais fascinado com as coisas que podemos fazer e nas soluções que podemos criar, acredito que a melhor parte é poder ver o impacto positivo do uso dessas tecnologias. Posso dizer que me interesso pelas áreas de Data Science, Machine Learning, Automação e desenvolvimento web.</p>
+            </div>
         </section>
 
         <div id="skills"></div>
@@ -108,13 +110,14 @@
         <section class="projetos" >
             <h1>Projetos</h1>
             <div class="projetos-btn">
-                <button>Front-End</button>
-                <button>Back-End</button>
-                <button>Data Science</button>
+                <button id="todos" onclick="filtro('todos')">Todos</button>
+                <button onclick="filtro('frontend')">Front-End</button>
+                <button onclick="filtro('backend')">Back-End</button>
+                <button onclick="filtro('datascience')">Data Science</button>
             </div>
 
             <div class="projetos-cards">
-                <div class="card">
+                <div class="card ativo frontend">
                     <div class="card-imagem">
                         <img src="src/img/img-ninja.png" alt="Imagem do menu do jogo">
                     </div>
@@ -139,14 +142,40 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card ativo frontend">
+                    <div class="card-imagem">
+                        <img src="src/img/img-ninja.png" alt="Imagem do menu do jogo">
+                    </div>
+
+                    <div class="card-descricao">
+                        <h2>Ninja Killer</h2>
+                        <h4 id="label">FrontEnd <span class="bolinha"></span> 2019</h4>
+                        <p><a>Ninja Killer</a> é um jogo desenvolvido em javascript usando p5.js, como trabalho final da disciplina de Lógica de Programação da UFRN.</p>
+                    </div>
+
+                    <div class="card-flags">
+                        <ul>
+                            <li>FrontEnd</li>
+                            <li>javascript</li>
+                            <li>html</li>
+                            <li>css</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Ver projeto</button>
+                    </div>
+                </div>
+                
+
+                <div class="card ativo backend">
                     <div class="card-imagem">
                         <img src="src/img/img-ninja.png" alt="">
                     </div>
 
                     <div class="card-descricao">
                         <h2>Ninja Killer</h2>
-                        <h4 id="label">FrontEnd <span class="bolinha"></span> 2019</h4>
+                        <h4 id="label">Backend <span class="bolinha"></span> 2019</h4>
                         <p>Ninja Killer é um jogo desenvolvido em javascript usando p5.js, como trabalho final da disciplina de Lógica de Programação da UFRN.</p>
                     </div>
 
@@ -164,14 +193,64 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card ativo backend">
                     <div class="card-imagem">
                         <img src="src/img/img-ninja.png" alt="">
                     </div>
 
                     <div class="card-descricao">
                         <h2>Ninja Killer</h2>
-                        <h4 id="label">FrontEnd <span class="bolinha"></span> 2019</h4>
+                        <h4 id="label">Backend <span class="bolinha"></span> 2019</h4>
+                        <p>Ninja Killer é um jogo desenvolvido em javascript usando p5.js, como trabalho final da disciplina de Lógica de Programação da UFRN.</p>
+                    </div>
+
+                    <div class="card-flags">
+                        <ul>
+                            <li>FrontEnd</li>
+                            <li>javascript</li>
+                            <li>html</li>
+                            <li>css</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Ver projeto</button>
+                    </div>
+                </div>
+
+                <div class="card ativo datascience">
+                    <div class="card-imagem">
+                        <img src="src/img/img-ninja.png" alt="">
+                    </div>
+
+                    <div class="card-descricao">
+                        <h2>Ninja Killer</h2>
+                        <h4 id="label">Data Science <span class="bolinha"></span> 2019</h4>
+                        <p>Ninja Killer é um jogo desenvolvido em javascript usando p5.js, como trabalho final da disciplina de Lógica de Programação da UFRN.</p>
+                    </div>
+
+                    <div class="card-flags">
+                        <ul>
+                            <li>FrontEnd</li>
+                            <li>javascript</li>
+                            <li>html</li>
+                            <li>css</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Ver projeto</button>
+                    </div>
+                </div>
+
+                <div class="card ativo datascience">
+                    <div class="card-imagem">
+                        <img src="src/img/img-ninja.png" alt="">
+                    </div>
+
+                    <div class="card-descricao">
+                        <h2>Ninja Killer</h2>
+                        <h4 id="label">Data Science <span class="bolinha"></span> 2019</h4>
                         <p>Ninja Killer é um jogo desenvolvido em javascript usando p5.js, como trabalho final da disciplina de Lógica de Programação da UFRN.</p>
                     </div>
 
@@ -196,7 +275,7 @@
             <h1>Entre em contato</h1>
             <div class="bloco-contato">
                 <div class="descricao-contato">
-                    <p>E aí, bora <a>conversar</a>? Você pode entrar em comigo através de qualquer uma das <a>redes sociais</a> abaixo. </p>
+                    <p>E aí, bora <a>conversar</a>? Você pode entrar em contato comigo através de qualquer uma das <a>redes sociais</a> abaixo ou me acompanhar através delas <a>^^</a>. </p>
                 </div>
 
                 <div class="icones-contato">
@@ -216,5 +295,6 @@
 
 <script src="src/js/mobile-navbar.js"></script>
 <script src="src/js/navbar-mudar-cor.js"></script>
+<script src="src/js/script.js"></script>
 </body>
 </html>

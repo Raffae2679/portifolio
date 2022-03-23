@@ -3,7 +3,7 @@
         width: 290px;
     }
     .perfil-texto h1{
-        font-size: 21px;
+        font-size: 22px;
     }
     
     .bloco-contato{
@@ -22,14 +22,17 @@
 
 @media (min-width: 394px){
     .textos-perfil{
-        width: 300px;
+        width: 80vw;
     }
     .perfil-texto h1{
-        font-size: 25px;
+        font-size: 23px;
     }
 }
 
 @media (min-width: 600px){
+    .textos-perfil{
+        width: 85vw;
+    }
     .card{
         width: 60%;
     }
@@ -37,4 +40,153 @@
     .bloco-contato{
         width: 80%;
     }
+}
+
+/* Desktop */
+
+@media (min-width:999px){
+    .entrada{
+        flex-direction: row-reverse;
+        margin-top: 130px;
+        justify-content: space-between;
+    }
+
+    .perfil-foto{
+        padding-top: 0;
+    }
+
+    .perfil-foto img{
+        width: 309px;
+        height: 309px;
+    }
+
+    .textos-perfil{
+        width: 25vw;
+    }
+
+    
+    .perfil-texto h1{
+        font-size:50px;
+        width: 321px;
+    }
+
+    .btn-contato{
+        cursor: pointer;
+        transition:0.5s;
+    }
+
+    .btn-contato:hover{
+        background: #171717;
+        color: rgb(52, 170, 170); 
+        border:1px solid rgb(52, 170, 170);
+        transition:0.5s ease-in;
+    }
+
+    .btn-projeto{
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .btn-projeto:hover{
+        background: rgb(52, 170, 170);
+        border: 1px solid rgb(52,170,170);
+        transition:0.5s ease-in;
+    }
+
+    .descricao{
+        margin-top:50px
+    }
+
+    .texto-descricao{
+        width: 50%;
+    }
+
+    .habilidades{
+        margin-top: 50px;
+    }
+    .div-habilidades{
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .front-skill, .back-skill, .database-skill{
+        width: 30%;
+        transition: all .2s ease-in-out;
+
+    }
+
+    .front-skill:hover, .back-skill:hover, .database-skill:hover{
+        transition-duration: 0.4s;
+        transform: scale(1.05);
+    }
+
+    
+    .front-titulo, .back-titulo, .database-titulo{
+        height: 35px;
+    }
+
+    .projetos{
+        margin-top:50px;
+    }
+
+    .projetos-btn{
+        width: 50%;
+        
+    }
+
+    .projetos-btn button{
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #todos{
+        display: block;
+    }
+
+    .projetos-btn button:hover{
+        background: rgb(52, 170, 170);
+        transition:0.5s ease-in;
+    }
+
+    .projetos-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-descricao p{
+        font-size: 15px;
+    }
+
+    .card-descricao h4{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 29%;
+    }
+
+    .card-flags li{
+        padding: 4px;
+    }
+
+    .card-btn button{
+        cursor: pointer;
+    }
+
+    .contato{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:1300px){
+    .card-flags li{
+        font-size: 15px;
+    }
+
+    .projetos-cards{
+        width: 80%;
+    }
+
+
+
 }
