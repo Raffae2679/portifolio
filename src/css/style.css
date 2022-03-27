@@ -253,7 +253,7 @@ a{
     }
 
 
-    .front-imagem embed, .back-imagem embed, .database-imagem embed{
+    .front-imagem img, .back-imagem img, .database-imagem img{
         height: 76px!important;
         width:  56px!important;
         padding-top: 10px ;
@@ -305,7 +305,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 80%;
     gap: 50px;
 }
 
@@ -360,7 +360,7 @@ a{
 
 .card-flags li{
     background: rgb(52, 170, 170);
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     font-weight: 600;
     margin-top: 8px;
@@ -446,10 +446,11 @@ a{
     justify-content: space-around;
 }
 
-.icones-contato embed{
+.icones-contato img{
     width: 51px;
     height: 51px;
     border-radius: 15px;
+    cursor: pointer;
 }
 /* Fim contato */
 
