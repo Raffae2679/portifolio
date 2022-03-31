@@ -140,7 +140,7 @@ body{
     margin-top: 10px;
 }
 .btn-contato{
-    background: rgb(52, 170, 170);
+    background: #34aaaa;
     border: none ;
     color: #F9F9F9;
     height: 40px;
@@ -178,7 +178,7 @@ body{
 
 .descricao h1{
     font-size: 30px;
-    border-bottom: 5px solid rgb(52, 170, 170);
+    border-bottom: 5px solid #34aaaa;
     margin-bottom: 10px;
 }
 
@@ -191,7 +191,7 @@ body{
 
 a{
     text-decoration: none;
-    color:rgb(52, 170, 170);
+    color:#34aaaa;
 }
 
 /* FIm descrição */
